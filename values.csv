@@ -1,0 +1,3 @@
+_key,SCMSource,CacheCohort,UseLegacyHeuristic,CohortTimeout,binderyRiskModel,personMeasureEvidenceInitiativeIds,riskTrailingYear
+subGroup1,source_a,true,false,7007,,,
+subGroup2,,,,,risk_model_a,"id1,id2,id3",true

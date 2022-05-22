@@ -1,0 +1,13 @@
+{
+  "subGroup1": {
+    "SCMSource": "source_a",
+    "CacheCohort": true,
+    "UseLegacyHeuristic": false,
+    "CohortTimeout": 7007
+  },
+  "subGroup2": {
+    "binderyRiskModel": "risk_model_a",
+    "personMeasureEvidenceInitiativeIds": "id1,id2,id3",
+    "riskTrailingYear": true
+  }
+}
