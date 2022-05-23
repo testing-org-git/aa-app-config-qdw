@@ -8,11 +8,13 @@
     "subGroup1": {
       "title": "SubGroup 1 Section",
       "type": "object",
+      "required": [
+        "SCMSource", "CacheCohort", "CohortTimeout"
+      ],
       "properties": {
         "SCMSource": {
           "title": "SCMSource",
           "description": "Tag for client repository",
-          "pattern": "^[a-zA-Z]*$",
           "type": "string"
         },
         "CacheCohort": {
