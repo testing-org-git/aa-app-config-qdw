@@ -4,7 +4,6 @@
     "tile": true,
     "mandatory": true
   },
-  "description": "Testing testing.",
   "properties": {
     "subGroup1": {
       "title": "SubGroup 1 Section",
@@ -34,6 +33,27 @@
     },
     "subGroup2": {
       "title": "SubGroup 2 Section",
+      "type": "object",
+      "properties": {
+        "binderyRiskModel": {
+          "title": "binderyRiskModel",
+          "description": "Defines the default risk model used for Bindery budgets",
+          "type": "string"
+        },
+        "personMeasureEvidenceInitiativeIds": {
+          "title": "personMeasureEvidenceInitiativeIds",
+          "description": "A comma separated list of Initiative Ids",
+          "type": "string"
+        },
+        "riskTrailingYear": {
+          "title": "riskTrailingYear",
+          "description": "Enable calculation of risk for trailing year",
+          "type": "boolean"
+        }
+      }
+    },
+    "subGroup3": {
+      "title": "SubGroup 3 Section",
       "type": "object",
       "properties": {
         "binderyRiskModel": {
