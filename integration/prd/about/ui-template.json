@@ -12,6 +12,7 @@
         "SCMSource": {
           "title": "SCMSource",
           "description": "Tag for client repository",
+          "pattern": "^[a-zA-Z]*$",
           "type": "string"
         },
         "CacheCohort": {
@@ -38,32 +39,13 @@
         "binderyRiskModel": {
           "title": "binderyRiskModel",
           "description": "Defines the default risk model used for Bindery budgets",
+          "pattern": "^[a-zA-Z]*$",
           "type": "string"
         },
         "personMeasureEvidenceInitiativeIds": {
           "title": "personMeasureEvidenceInitiativeIds",
           "description": "A comma separated list of Initiative Ids",
-          "type": "string"
-        },
-        "riskTrailingYear": {
-          "title": "riskTrailingYear",
-          "description": "Enable calculation of risk for trailing year",
-          "type": "boolean"
-        }
-      }
-    },
-    "subGroup3": {
-      "title": "SubGroup 3 Section",
-      "type": "object",
-      "properties": {
-        "binderyRiskModel": {
-          "title": "binderyRiskModel",
-          "description": "Defines the default risk model used for Bindery budgets",
-          "type": "string"
-        },
-        "personMeasureEvidenceInitiativeIds": {
-          "title": "personMeasureEvidenceInitiativeIds",
-          "description": "A comma separated list of Initiative Ids",
+          "pattern": "^[a-zA-Z]*$",
           "type": "string"
         },
         "riskTrailingYear": {
