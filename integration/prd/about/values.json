@@ -1,6 +1,8 @@
 {
   "subGroup1": {
-    "SCMSource": "dfdsfdsfds"
+    "CacheCohort": true,
+    "CohortTimeout": 1111,
+    "SCMSource": "hello world"
   },
   "subGroup2": {},
   "subGroup3": {}
