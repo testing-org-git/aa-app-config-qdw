@@ -5,6 +5,8 @@
     "SCMSource": "hello world",
     "UseLegacyHeuristic": true
   },
-  "subGroup2": {},
+  "subGroup2": {
+    "binderyRiskModel": "hello"
+  },
   "subGroup3": {}
 }
