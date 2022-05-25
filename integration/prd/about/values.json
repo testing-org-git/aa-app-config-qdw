@@ -2,12 +2,12 @@
   "subGroup1": {
     "CacheCohort": true,
     "CohortTimeout": 11,
-    "SCMSource": "hello",
+    "SCMSource": "hello55",
     "UseLegacyHeuristic": false
   },
   "subGroup2": {},
   "subGroup3": {
-    "binderyRiskModel": "asdf",
+    "binderyRiskModel": "asdfgh",
     "personMeasureEvidenceInitiativeIds": "asd",
     "riskTrailingYear": true
   }
