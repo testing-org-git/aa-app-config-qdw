@@ -5,6 +5,8 @@
     "SCMSource": "123",
     "UseLegacyHeuristic": true
   },
-  "subGroup2": {},
+  "subGroup2": {
+    "binderyRiskModel": "dsadsad"
+  },
   "subGroup3": {}
 }
