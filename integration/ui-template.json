@@ -1,0 +1,84 @@
+{
+  "type": "object",
+  "x-props": {
+    "tile": true,
+    "mandatory": true
+  },
+  "properties": {
+    "subGroup1": {
+      "title": "SubGroup 1 Section",
+      "type": "object",
+      "required": [
+        "SCMSource", "CacheCohort", "CohortTimeout"
+      ],
+      "properties": {
+        "SCMSource": {
+          "title": "SCMSource",
+          "description": "Tag for client repository",
+          "type": "string"
+        },
+        "CacheCohort": {
+          "title": "CacheCohort",
+          "description": "If we cache cohorts",
+          "type": "boolean"
+        },
+        "UseLegacyHeuristic": {
+          "title": "UseLegacyHeuristic",
+          "description": "If we use the old heuristic to determine if we use nested loops",
+          "type": "boolean"
+        },
+        "CohortTimeout": {
+          "title": "CohortTimeout",
+          "description": "MS to wait to cache a cohort",
+          "type": "number"
+        }
+      }
+    },
+    "subGroup2": {
+      "title": "SubGroup 2 Section",
+      "type": "object",
+      "properties": {
+        "binderyRiskModel": {
+          "title": "binderyRiskModel",
+          "description": "Defines the default risk model used for Bindery budgets",
+          "pattern": "^[a-zA-Z]*$",
+          "type": "string"
+        },
+        "personMeasureEvidenceInitiativeIds": {
+          "title": "personMeasureEvidenceInitiativeIds",
+          "description": "A comma separated list of Initiative Ids",
+          "pattern": "^[a-zA-Z]*$",
+          "type": "string"
+        },
+        "riskTrailingYear": {
+          "title": "riskTrailingYear",
+          "description": "Enable calculation of risk for trailing year",
+          "type": "boolean"
+        }
+      }
+    },
+    "subGroup3": {
+      "title": "SubGroup 3 Section",
+      "type": "object",
+      "properties": {
+        "binderyRiskModel": {
+          "title": "binderyRiskModel",
+          "description": "Defines the default risk model used for Bindery budgets",
+          "pattern": "^[a-zA-Z]*$",
+          "type": "string"
+        },
+        "personMeasureEvidenceInitiativeIds": {
+          "title": "personMeasureEvidenceInitiativeIds",
+          "description": "A comma separated list of Initiative Ids",
+          "pattern": "^[a-zA-Z]*$",
+          "type": "string"
+        },
+        "riskTrailingYear": {
+          "title": "riskTrailingYear",
+          "description": "Enable calculation of risk for trailing year",
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}
