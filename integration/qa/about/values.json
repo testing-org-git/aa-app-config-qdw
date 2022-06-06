@@ -1,0 +1,9 @@
+{
+  "subGroup1": {
+    "CacheCohort": true,
+    "CohortTimeout": 12,
+    "SCMSource": "123"
+  },
+  "subGroup2": {},
+  "subGroup3": {}
+}
