@@ -1,0 +1,12 @@
+{
+  "subGroup1": {
+    "CacheCohort": true,
+    "CohortTimeout": 11,
+    "SCMSource": "1234567",
+    "UseLegacyHeuristic": true
+  },
+  "subGroup2": {
+    "binderyRiskModel": "dsadsad"
+  },
+  "subGroup3": {}
+}
