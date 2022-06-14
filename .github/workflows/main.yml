@@ -1,0 +1,23 @@
+name: main
+
+on:
+  pull_request:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: validation
+        run: |
+          value=$(cat infra/namespace/customer/values.json | jq .value | cut -d '"' -f 2) # <--- SET YOUR PATH HERE
+          echo "Parsed value: $value"
+          if [[ "$value" == "success" ]]; then
+            exit 0
+          else
+            echo "::error title=validation-error::not allowed value: $value"
+            exit 1
+          fi
