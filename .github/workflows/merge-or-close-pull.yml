@@ -1,0 +1,30 @@
+name: merge-or-close-pull
+
+on:
+  workflow_run:
+    workflows: 
+      - 'main'
+    types:
+      - completed
+
+jobs:
+  job:
+    name: Merge or close Pull
+    runs-on: ubuntu-latest
+    steps:
+      - if: ${{ github.event.workflow_run.conclusion == 'success' }}
+        name: Merge Pull
+        uses: ridedott/merge-me-action@v2
+        with:
+          # GitHub app name here
+          GITHUB_LOGIN: ${{ github.event.workflow_run.actor.login }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MERGE_METHOD: MERGE
+      - if: ${{ github.event.workflow_run.conclusion != 'success' }}
+        name: Close Pull
+        uses: peter-evans/close-pull@v2.0.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.event.repository.full_name }}
+          pull-request-number: ${{ github.event.workflow_run.pull_requests[0].number }}
+          comment: Automatically closing the pull sinse validation build has failed 
