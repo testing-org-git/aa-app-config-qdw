@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: validation
         run: |
-          value=$(cat integration/prd/demo2/values.json | jq .value | cut -d '"' -f 2) # <--- SET YOUR PATH HERE
+          value=$(cat integration/prd/DEMO2/values.json | jq .value | cut -d '"' -f 2) # <--- SET YOUR PATH HERE
           echo "Parsed value: $value"
           if [[ "$value" == "success" ]]; then
             exit 0
