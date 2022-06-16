@@ -12,6 +12,9 @@ jobs:
     name: Merge or close Pull
     runs-on: ubuntu-latest
     steps:
+      - env:
+          JSON: ${{ toJSON(github) }}
+        run: echo $JSON
       - if: ${{ github.event.workflow_run.conclusion == 'success' }}
         name: Merge Pull
         uses: ridedott/merge-me-action@v2
