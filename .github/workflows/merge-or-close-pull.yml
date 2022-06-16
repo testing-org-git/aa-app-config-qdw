@@ -20,7 +20,7 @@ jobs:
         uses: ridedott/merge-me-action@v2
         with:
           # GitHub app name here
-          GITHUB_LOGIN: ${{ github.event.repository.owner.login }}
+          GITHUB_LOGIN: ${{ github.event.workflow_run.actor.login }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MERGE_METHOD: MERGE
       - if: ${{ github.event.workflow_run.conclusion != 'success' }}
